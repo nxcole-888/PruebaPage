@@ -9,13 +9,52 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <center><h1>Hola Mundo</h1></center>
-    <center><h4>Desarrollado por: <a href="https://github.com/nxcole-888">Nicole Molina</a> </h4></center>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    <header class="site-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="brand">ÉTER</div>
+        <nav class="site-nav">
+            <a href="index.html">Inicio</a>
+            <a href="#">Pronóstico</a>
+            <a href="#">Acerca</a>
+            <a href="contactos.html">Contacto</a>
+        </nav>
+    </header>
 
-    <center><button onclick="saludar()">click me</button></center>
+    <aside class="site-sidebar" id="sidebar" aria-hidden="true">
+        <button class="sidebar-close" id="sidebarClose" aria-label="Cerrar menú">✕</button>
+        <nav class="sidebar-nav">
+            <a href="index.html">Inicio</a>
+            <a href="#">Mañana</a>
+            <a href="#">Semana</a>
+            <a href="contactos.html">Contacto</a>
+        </nav>
+    </aside>
 
-    <!-- js-->  
+    <div class="backdrop" id="backdrop" hidden></div>
+
+    <main class="site-main">
+        <section class="hero">
+            <div class="hero-content">
+                
+                <h1>ÉTER: El cielo en tus manos</h1>
+                <p class="eyebrow">es una herramienta educativa que empodera a sus usuarios, ayudándoles a entender el mundo que les rodea y a tomar decisiones más informadas sobre su día a día.</a></p>
+                <div class="hero-actions">
+                    <button class="btn-outline" onclick="saludar()">Soy nuevo/a</button>
+                    <button class="btn-outline secondary">Qué está pasando?</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 ÉTER. Desarrollado por <a href="https://github.com/nxcole-888">Nicole Molina</a>.</p>
+    </footer>
+
+    <!-- js-->
     <script src="js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
